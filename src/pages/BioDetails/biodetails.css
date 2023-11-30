@@ -1,0 +1,24 @@
+.bioDetails_n_sidebar {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.bioDetails_sidebar {
+    max-width: 300px;
+}
+
+.bioDetails_sidebar .feature__cards {
+    grid-template-columns: 1fr;
+}
+
+.bioDetails_main {
+    width: calc(100% - 308px);
+}
+
+.bioDetails_sidebar h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}

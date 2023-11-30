@@ -1,0 +1,38 @@
+.dashboard{    
+    padding: 3rem 0;
+}
+.dashboard_wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboard_wrapper .content {
+    width: calc(100% - 220px);
+}
+
+.dashboard_wrapper .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dashboard_wrapper .sidebar ul li {margin-bottom: 20px;background-color: #9d4151;padding: 5px;}
+
+.dashboard_wrapper .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.dashboard_wrapper .sidebar {
+    padding: 1rem;
+    background-color: black;
+    min-width: 220px;
+}
+
+.dashboard_wrapper .sidebar ul li:last-child {
+    background: none;
+}
+
+.dashboard {
+    background-color: #dbdbdb;
+}

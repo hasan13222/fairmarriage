@@ -1,0 +1,9 @@
+.checkout{
+    background: url('../../assets/images/stripe.png') no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.checkout form {
+    max-width: 400px;
+    padding: 3rem 0;
+}

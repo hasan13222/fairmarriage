@@ -1,0 +1,247 @@
+/* HOME PAGE */
+img#logo {
+  width: 90px;
+}
+
+.banner {
+  background: url(/src/assets/images/banner.jpg) no-repeat;
+  background-color: rgba(255, 219, 219, 0.057);
+  background-size: contain;
+  height: calc(100vh - 190px);
+  text-align: center;
+}
+
+.banner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 680px;
+}
+.banner .container h1 {
+  color: #9b2c3f;
+}
+
+button.btn {
+  background-color: #be3d53;
+  color: #fff;
+}
+
+/* home page feature section */
+.feature__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.feature {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+}
+
+.feature h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feature__cards li {
+  list-style: none;
+}
+
+.feature .card-title {
+  padding-left: 5px;
+}
+
+.feature__cards .card-body {
+  text-align: center;
+}
+
+.feature__cards ul {
+  padding: 0;
+  text-align: left;
+}
+
+.feature__cards img.card-img-top {
+  height: 14rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* biodata details */
+.bioDetails {
+  padding: 3rem 0;
+  background-color: rgb(240 240 240 / 10%);
+}
+
+.bioDetails .img_wrapper {
+  text-align: center;
+}
+
+.bioDetails .img_wrapper img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.bioDetails .table-responsive-sm {
+  border: 2px solid gainsboro;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.bioDetails table tr th {
+  padding-left: 20px;
+  border-right: 1px solid gainsboro;
+  width: 50%;
+}
+
+.bioDetails table tr td {
+  padding-left: 20px;
+}
+
+.bioDetails table thead tr {
+  border-bottom: 2px solid gainsboro;
+}
+
+/* siteflow */
+.siteFlow .flowchart {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.siteFlow .flowchart .img_wrapper {
+  width: 48%;
+}
+
+.siteFlow .flowchart .img_wrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.siteFlow {
+  padding: 3rem 0;
+}
+
+.siteFlow h2 {
+  text-align: center;
+}
+
+.siteFlow .flowchart ul {
+  border-left: 2px solid black;
+  list-style: none;
+}
+
+.siteFlow .flowchart ul li {
+  padding: 6px;
+  position: relative;
+}
+
+.siteFlow .flowchart ul li::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  position: absolute;
+  left: -39px;
+  border-radius: 50%;
+  border: 3px solid #f74646;
+  z-index: 10;
+  top: 36%;
+}
+
+/* counter */
+.counter h2 {
+  text-align: center;
+}
+
+.counter {
+  padding: 2.3rem 0;
+  background-color: rgb(255 244 246 / 30%);
+}
+
+.counter__items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.counter__items .item span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #424141;
+}
+.counter__items .item {
+  text-align: center;
+}
+
+/* stories */
+.stories h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stories {
+  padding: 3rem 0;
+}
+
+.stories__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.4rem;
+}
+
+.stories .item small {
+  font-size: 10px;
+  color: #4d4949;
+}
+.stories .card .stars svg {
+  color: #ea3756;
+}
+/* footer */
+section.footer {
+  padding-top: 3rem;
+}
+
+section.footer h6 img {
+  max-width: 6rem;
+}
+
+section.footer p svg {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .feature__cards {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+  }
+  .stories__items {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+  }
+  .counter__items {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+}
+
+@media (max-width: 425px) {
+  .feature__cards {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+  }
+  .stories__items {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+  }
+  .banner .container{
+    width: 425px;
+  }
+}

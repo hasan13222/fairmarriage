@@ -1,0 +1,35 @@
+.signup {
+    padding: 3rem 0;
+}
+.signup .container{
+    background: url('../../assets/images/login.png') no-repeat;
+    background-size: contain;
+    background-position: 50% top;
+}
+.signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.8rem 0;
+    padding-bottom: 0.6rem;
+}
+
+.signup form input {
+    border: 1px solid lightgrey;
+    max-width: 15rem;
+    padding: 1rem;
+}
+
+.signup form input[type="submit"] {
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 6.6rem;
+    cursor: pointer;
+}
+
+.signup p.warning {
+    color: red;
+}
+.signup form small {
+    background-color: hsl(0deg 0% 100% / 85%);
+}

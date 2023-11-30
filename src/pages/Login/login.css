@@ -1,0 +1,42 @@
+.login {
+    padding: 3rem 0;
+}
+.login .container{
+    background: url('../../assets/images/login.png') no-repeat;
+    background-size: contain;
+    background-position: 50% top;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.8rem 0;
+    padding-bottom: 0.6rem;
+}
+
+.login form input {
+    border: 1px solid lightgrey;
+    max-width: 15rem;
+    padding: 1rem;
+}
+
+.login form input[type="submit"] {
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 6.6rem;
+    cursor: pointer;
+}
+
+.login p.warning {
+    color: red;
+}
+.login button.google_signin {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.login button.google_signin svg {
+    margin-right: 5px;
+    font-size: 1.2rem;
+}

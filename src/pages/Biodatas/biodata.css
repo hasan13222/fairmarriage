@@ -1,0 +1,54 @@
+.biodatas {
+  padding: 3rem 0;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+
+.biodatas {
+  padding: 3rem 0;
+}
+
+.filter_n_bio_items {
+  display: flex;
+  gap: 10px;
+}
+
+.filter_n_bio_items .filter .age_range {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filter_n_bio_items .filter {
+    min-width: 200px;
+    overflow: hidden;
+    border-right: 1px dashed pink;
+    padding-right: 10px;
+}
+
+.filter_n_bio_items .filter .age_range div input {
+  width: 55px;
+}
+.filter_n_bio_items p {
+    margin-bottom: 5px;
+}
+
+.filter_n_bio_items .filter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filter_n_bio_items p, .filter_n_bio_items label {
+    font-weight: 500;
+}
+.filter_n_bio_items .biodata-type label {
+    font-weight: normal;
+    padding: 0 3px;
+    padding-right: 10px;
+}
+.filter_n_bio_items label[for="division"] {
+    display: block;
+}
