@@ -1,8 +1,18 @@
-# React + Vite
+# Electrons Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [Live Link](https://fairmarriage-fb268.web.app)
 
-Currently, two official plugins are available:
+## Fetures of the Site
+  - Interested user can see the biodatas of the brides/grooms
+  - Bride/Groom can add their biodata and update when they wish
+  - Registered Users have their own dashboard 
+  - Registered User can request to see the contact info of their interested one paying certain amount
+  - Admin can make any user premium or admin 
+  - Admin can see the summary information of users and revenues
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology Used
+  - Bootstrap
+  - React
+  - MongoDB
+  - ExpressJS
+  - NodeJS
