@@ -1,0 +1,35 @@
+.contact {
+    padding: 3rem 0;
+}
+
+.contact .contact_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+.contact .contact_form form label {
+    display: block;
+}
+
+.contact .contact_form form input, .contact .contact_form form textarea {
+    width: 100%;
+    margin-top: 4px;
+    border: 1px solid #e9d7d7;
+    padding: 4px 15px;
+    border-radius: 2px;
+}
+
+.contact .contact_form form textarea {
+    opacity: .8;
+}
+
+.contact .contact_form form input[type="submit"] {
+    background-color: #de3d59;
+    color: white;
+    font-weight: 600;
+}

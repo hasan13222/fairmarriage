@@ -1,0 +1,35 @@
+.about {
+    padding: 3rem 0;
+}
+
+.about .image_text {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about .image_text .img_wrapper {
+    width: 42%;
+    overflow: hidden;
+}
+
+.about .image_text .img_wrapper img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.about .image_text .text_wrapper {
+    width: 52%;
+}
+
+@media (max-width: 768px) {
+    .about .image_text .text_wrapper {
+        width: 100%;
+        order: 2;
+    }
+.about .image_text .img_wrapper {
+    order: 1;
+    width: 100%;
+}
+}

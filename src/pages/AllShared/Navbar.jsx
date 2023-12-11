@@ -20,8 +20,8 @@ const NavbarComp = () => {
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/biodatas">Biodatas</Nav.Link>
-              <Nav.Link href="/biodatas">About Us</Nav.Link>
-              <Nav.Link href="/biodatas">Contact Us</Nav.Link>
+              <Nav.Link href="/about-us">About Us</Nav.Link>
+              <Nav.Link href="/contact">Contact Us</Nav.Link>
               {!user &&<Nav.Link href="/register">Register</Nav.Link>}
               {!user &&<Nav.Link href="/login">Login</Nav.Link>}
               {user && userRole !== 'admin' && <Nav.Link href="/dashboard">Dashboard</Nav.Link>}

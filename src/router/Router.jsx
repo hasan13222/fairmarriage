@@ -18,6 +18,8 @@ import PrivateRoute from "./PrivateRoute"
 import PremReq from './../pages/Admin/ApprPremRq/PremReq';
 import ApprContReq from './../pages/Admin/ApprContReq/ApprContReq';
 import AdminRoute from "./AdminRoute"
+import AboutUs from "../pages/AboutUs/AboutUs"
+import ContactUs from "../pages/ContactUs/ContactUs"
 
 const Router = () => {
   return (
@@ -25,6 +27,8 @@ const Router = () => {
     <Routes>
         <Route path="/" element={<Root/>}>
             <Route path="/" element={<Home/>} />
+            <Route path="/about-us" element={<AboutUs/>}/>
+            <Route path="/contact" element={<ContactUs/>}/>
             <Route path="/biodatas" element={<Biodatas/>} />
             <Route path="/biodatas/:bioId" element={<PrivateRoute><BioDetails/></PrivateRoute>} />
             <Route path="/register" element={<Signup/>} />
