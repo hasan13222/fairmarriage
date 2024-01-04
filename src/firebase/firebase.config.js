@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDJ5BtgVCgWLqzzOM65BEYBbl-1BhVosgI",
-  authDomain: "fairmarriage-fb268.firebaseapp.com",
-  projectId: "fairmarriage-fb268",
-  storageBucket: "fairmarriage-fb268.appspot.com",
-  messagingSenderId: "1063985279057",
-  appId: "1:1063985279057:web:d21488f25c13f6a90f8870"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
