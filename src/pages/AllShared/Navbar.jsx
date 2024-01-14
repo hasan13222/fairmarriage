@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import { AuthContext } from './../../Providers/AuthProvider';
+import { NavLink } from "react-router-dom";
 
 const NavbarComp = () => {
   const {user, userRole} = useContext(AuthContext);
@@ -18,14 +19,14 @@ const NavbarComp = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-0">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/biodatas">Biodatas</Nav.Link>
-              <Nav.Link href="/about-us">About Us</Nav.Link>
-              <Nav.Link href="/contact">Contact Us</Nav.Link>
-              {!user &&<Nav.Link href="/register">Register</Nav.Link>}
-              {!user &&<Nav.Link href="/login">Login</Nav.Link>}
-              {user && userRole !== 'admin' && <Nav.Link href="/dashboard">Dashboard</Nav.Link>}
-              {user && userRole === 'admin' && <Nav.Link href="/admin">Dashboard</Nav.Link>}
+              <NavLink className="nav-link" to={'/'}>Home</NavLink>
+              <NavLink className="nav-link" to={'/biodatas'}>Biodatas</NavLink>
+              <NavLink className="nav-link" to={'/about-us'}>About Us</NavLink>
+              <NavLink className="nav-link" to={'/contact'}>Contact Us</NavLink>
+              {!user &&<NavLink className="nav-link" to={'/register'}>Register</NavLink>}
+              {!user &&<NavLink className="nav-link" to={'/login'}>Login</NavLink>}
+              {user && userRole !== 'admin' && <NavLink className="nav-link" to={'/dashboard'}>Dashboard</NavLink>}
+              {user && userRole === 'admin' && <NavLink className="nav-link" to={'/admin'}>Dashboard</NavLink>}
             </Nav>
           </Navbar.Collapse>
         </Container>

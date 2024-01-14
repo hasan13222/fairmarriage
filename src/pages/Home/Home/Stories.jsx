@@ -20,7 +20,7 @@ const Stories = () => {
   });
   return (
     <>
-      <div className="stories container-fluid">
+      <div data-aos="flip-down" className="stories container-fluid">
         <Container>
           <h2>Success Stories</h2>
           {(isLoading || isFetching) && (

@@ -17,7 +17,7 @@ const Counter = () => {
   });
   return (
     <>
-      <div className="counter container-fluid">
+      <div data-aos="flip-up" className="counter container-fluid">
         <Container>
           <h2>Success Counter</h2>
           <div className="counter__items">

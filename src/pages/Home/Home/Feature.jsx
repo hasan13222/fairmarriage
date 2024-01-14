@@ -25,7 +25,7 @@ const Feature = () => {
   });
   return (
     <>
-      <div className="container-fluid feature">
+      <div data-aos="slide-up" className="container-fluid feature">
         <Container>
           <h2>Fetured Profiles</h2>
           {(isLoading || isFetching) && (

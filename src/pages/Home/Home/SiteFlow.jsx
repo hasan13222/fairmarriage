@@ -4,7 +4,7 @@ import { images } from "../../../assets"
 const SiteFlow = () => {
   return (
     <>
-        <div className="siteFlow container-fluid">
+        <div data-aos="flip-right"  className="siteFlow container-fluid">
           <Container>
             <h2>How The Website Works</h2>
             <div className="flowchart">
